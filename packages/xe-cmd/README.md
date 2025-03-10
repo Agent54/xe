@@ -1,4 +1,4 @@
-# xe-core
+# xe-cmd
 
 To install dependencies:
 
