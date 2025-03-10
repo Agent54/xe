@@ -8,15 +8,19 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "@agent54/xe-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
   "scripts": {
     "build": "bun build ./index.ts --outdir ./dist --target node",
     "clean": "rm -rf dist",
     "prebuild": "bun run clean",
-    "prepublishOnly": "bun run build"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@agent54/xe-core": "workspace:*"
+    "prepublishOnly": "bun run build",
+    "bun:start": "bun run ./index.ts",
+    "deno:start": "deno run ./index.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

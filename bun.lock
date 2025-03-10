@@ -13,9 +13,12 @@
     },
     "packages/xe-cmd": {
       "name": "@agent54/xe-cmd",
-      "version": "0.1.0",
-      "devDependencies": {
+      "version": "0.1.24",
+      "bin": "./dist/index.js",
+      "dependencies": {
         "@agent54/xe-core": "workspace:*",
+      },
+      "devDependencies": {
         "@types/bun": "latest",
       },
       "peerDependencies": {
@@ -24,7 +27,7 @@
     },
     "packages/xe-core": {
       "name": "@agent54/xe-core",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "devDependencies": {
         "@types/bun": "latest",
       },

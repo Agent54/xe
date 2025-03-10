@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-console.log("Hello!");
+import Xe from "@agent54/xe-core";
+
+const xe = new Xe();
+
+console.log(xe.version());

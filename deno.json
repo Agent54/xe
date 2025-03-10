@@ -1,0 +1,6 @@
+{
+  "workspace": [
+    "packages/xe-core",
+    "packages/xe-cmd"
+  ]
+}
