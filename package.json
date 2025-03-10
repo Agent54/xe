@@ -1,0 +1,13 @@
+{
+  "name": "xe",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "xe-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
