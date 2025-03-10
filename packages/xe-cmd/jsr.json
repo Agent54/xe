@@ -1,6 +1,6 @@
 {
     "name": "@agent54/xe-cmd",
-    "version": "0.1.5",
+    "version": "0.1.23",
     "license": "MIT",
     "exports": "./index.ts",
     "bin": "./index.ts"

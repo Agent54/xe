@@ -1,18 +1,17 @@
 {
   "name": "@agent54/xe-cmd",
-  "version": "0.1.5",
-  "module": "index.ts",
+  "version": "0.1.23",
   "type": "module",
-  "bin": {
-    "xe": "./index.ts"
-  },
-  "main": "./index.ts",
-  "types": "./index.ts",
-  "exports": {
-    ".": {
-      "types": "./index.ts",
-      "import": "./index.ts"
-    }
+  "bin": "./dist/index.js",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist --target node",
+    "clean": "rm -rf dist",
+    "prebuild": "bun run clean",
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@types/bun": "latest",
