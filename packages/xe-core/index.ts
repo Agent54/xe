@@ -12,7 +12,7 @@ export default class Xe {
             console.log("Node");
         }
     }
-    version() {
+    version():string {
         return "0.1.1";
     }
 }
