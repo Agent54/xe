@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --experimental-transform-types
 
 // This shebang works for both Node.js and Bun
 const isBun = typeof Bun !== 'undefined';
