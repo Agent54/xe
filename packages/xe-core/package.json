@@ -1,5 +1,6 @@
 {
-  "name": "xe-core",
+  "name": "@agent54/xe-core",
+  "version": "0.1.0",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
@@ -7,5 +8,9 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
