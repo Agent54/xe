@@ -4,15 +4,27 @@
     "": {
       "name": "xe",
       "devDependencies": {
+        "@agent54/xe-core": "workspace:*",
         "@types/bun": "latest",
-        "xe-core": "workspace:*",
+      },
+      "peerDependencies": {
+        "typescript": "^5.0.0",
+      },
+    },
+    "packages/xe-cmd": {
+      "name": "@agent54/xe-cmd",
+      "version": "0.1.0",
+      "devDependencies": {
+        "@agent54/xe-core": "workspace:*",
+        "@types/bun": "latest",
       },
       "peerDependencies": {
         "typescript": "^5.0.0",
       },
     },
     "packages/xe-core": {
-      "name": "xe-core",
+      "name": "@agent54/xe-core",
+      "version": "0.1.0",
       "devDependencies": {
         "@types/bun": "latest",
       },
@@ -22,6 +34,10 @@
     },
   },
   "packages": {
+    "@agent54/xe-cmd": ["@agent54/xe-cmd@workspace:packages/xe-cmd"],
+
+    "@agent54/xe-core": ["@agent54/xe-core@workspace:packages/xe-core"],
+
     "@types/bun": ["@types/bun@1.2.4", "", { "dependencies": { "bun-types": "1.2.4" } }, "sha512-QtuV5OMR8/rdKJs213iwXDpfVvnskPXY/S0ZiFbsTjQZycuqPbMW8Gf/XhLfwE5njW8sxI2WjISURXPlHypMFA=="],
 
     "@types/node": ["@types/node@22.13.10", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw=="],
@@ -33,7 +49,5 @@
     "typescript": ["typescript@5.8.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ=="],
 
     "undici-types": ["undici-types@6.20.0", "", {}, "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="],
-
-    "xe-core": ["xe-core@workspace:packages/xe-core"],
   }
 }
